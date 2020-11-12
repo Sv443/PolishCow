@@ -1,0 +1,31 @@
+{
+  "name": "polishcow",
+  "version": "1.0.0",
+  "description": "Polish Cow but CLI",
+  "main": "PolishCow.js",
+  "bin": "PolishCow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-win": "pkg -t node13-win-x64 -o dist/PolishCow_Windows.exe .",
+    "build-linux": "pkg -t node13-linux-x64 -o dist/PolishCow_Linux .",
+    "build-macos": "pkg -t node13-macos-x64 -o dist/PolishCow_MacOS .",
+    "build": "npm run build-win && npm run build-linux && npm run build-macos"
+  },
+  "author": {
+    "name": "Sv443",
+    "url": "https://github.com/Sv443",
+    "email": "contact@sv443.net"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "music-metadata": "^7.5.0",
+    "play": "^0.5.0",
+    "sound-play": "^1.0.5"
+  },
+  "pkg": {
+    "assets": [
+      "./polishcow.mp3"
+    ]
+  }
+}
