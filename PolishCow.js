@@ -1,4 +1,4 @@
-const { resolve } = require("path");
+const { join } = require("path");
 const sound = require("sound-play");
 const mm = require("music-metadata");
 const fs = require("fs-extra");
@@ -24,11 +24,11 @@ const settings = {
     /** Set to true to enable debug messages */
     dbg: false,
     /** Path to the sound file */
-    soundFile: resolve("./resources/polishcow.mp3"),
+    soundFile: join(__dirname, "/resources/polishcow.mp3"),
     /** Adds this amount of seconds to the played audio file since the sound-play package is pretty inaccurate */
     endBuffer: 0.4,
     /** Where the frames of the animation are located */
-    animationDirectory: resolve("./resources/animation/"),
+    animationDirectory: join(__dirname, "/resources/animation/"),
     /** Minimum aspect ratio the terminal window needs to be in size */
     minAspectRatio: 2.5,
     /** Interval (in seconds) between the single frames of the animation */
