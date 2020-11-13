@@ -1,0 +1,6 @@
+[1.0.0]
+    - Added Polish Cow
+    - Removed other kinds of cows
+
+[1.1.0]
+    - Cow resizes responsively now (yes, that means you can have a 4k cow)
