@@ -1,4 +1,4 @@
-const { join } = require("path");
+const { resolve, join } = require("path");
 const sound = require("sound-play");
 const mm = require("music-metadata");
 const fs = require("fs-extra");
