@@ -1,14 +1,14 @@
 {
-  "name": "polishcow",
-  "version": "1.1.0",
-  "description": "Polish Cow but CLI",
-  "main": "PolishCow.js",
-  "bin": "PolishCow.js",
+  "name": "butterdog",
+  "version": "1.0.0",
+  "description": "The dog with da butter on 'im",
+  "main": "ButterDog.js",
+  "bin": "ButterDog.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-win": "pkg -t node13-win-x64 -o dist/PolishCow_Windows.exe .",
-    "build-linux": "pkg -t node13-linux-x64 -o dist/PolishCow_Linux .",
-    "build-macos": "pkg -t node13-macos-x64 -o dist/PolishCow_MacOS .",
+    "build-win": "pkg -t node13-win-x64 -o dist/ButterDog_Windows.exe .",
+    "build-linux": "pkg -t node13-linux-x64 -o dist/ButterDog_Linux .",
+    "build-macos": "pkg -t node13-macos-x64 -o dist/ButterDog_MacOS .",
     "build": "npm run build-win && npm run build-linux && npm run build-macos"
   },
   "author": {
@@ -26,12 +26,12 @@
     "sound-play": "^1.0.5",
     "svcorelib": "^1.11.1"
   },
-  "pkg": {
-    "assets": [
-      "./polishcow.mp3"
-    ]
-  },
   "devDependencies": {
     "eslint": "^7.13.0"
+  },
+  "pkg": {
+    "assets": [
+      "./butterdog.mp3"
+    ]
   }
 }

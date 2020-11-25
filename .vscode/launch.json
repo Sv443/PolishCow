@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "cow",
+            "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/PolishCow.js",
+            "program": "${workspaceFolder}\\ButterDog.js",
             "console": "externalTerminal"
         }
     ]
